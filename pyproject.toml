@@ -1,9 +1,5 @@
-[build-system]
-requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
-
 [project]
-name = "yolov9"
+name = "yolov9py"
 version = "0.1"
 description = "YOLOv9 object detection model"
 authors = [{name = "Rinor Ajeti", email = "r4ajeti@gmail.com"}]
@@ -16,10 +12,14 @@ dependencies = [
     "scipy",
     "beautifulsoup4",
     "alive_progress==3.1.5",
+    requests>=2.23.0
 ]
 
-[tool.setuptools]
-packages = ["yolov9"]
+[project.optional-dependencies]
+dev = [
+    Pillow>=7.1.2,
+    PyYAML>=5.3.1
+]
 
 [project.urls]
 "Homepage" = "https://github.com/R4Ajeti/yolov9"
