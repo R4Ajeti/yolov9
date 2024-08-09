@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yolov9"
+version = "0.1"
+description = "YOLOv9 object detection model"
+authors = [{name = "Rinor Ajeti", email = "r4ajeti@gmail.com"}]
+license = {text = "MIT"}
+requires-python = ">=3.6"
+dependencies = [
+    "numpy==1.26.4",
+    "opencv-python-headless",
+    "opencv-contrib-python",
+    "scipy",
+    "beautifulsoup4",
+    "alive_progress==3.1.5",
+]
+
+[tool.setuptools]
+packages = ["yolov9"]
+
+[project.urls]
+"Homepage" = "https://github.com/R4Ajeti/yolov9"
