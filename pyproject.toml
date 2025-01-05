@@ -38,4 +38,4 @@ dev = [
 Homepage = "https://github.com/R4Ajeti/yolov9"
 
 [tool.pip]
-extra-index-url = "https://download.pytorch.org/whl/cpu"
+index-url = "https://download.pytorch.org/whl/cpu"
