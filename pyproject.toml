@@ -7,8 +7,8 @@ license = {text = "MIT"}
 requires-python = ">=3.6"
 dependencies = [
     "numpy",
-    "opencv-python",
-    "opencv-contrib-python",
+    "opencv-python-headless",
+    "opencv-contrib-python-headless",
     "scipy",
     "beautifulsoup4",
     "alive_progress==3.1.5",
