@@ -23,8 +23,8 @@ dependencies = [
     "tqdm",
     "pandas",
     "seaborn",
-    "torch --index-url https://download.pytorch.org/whl/cpu",
-    "torchvision --index-url https://download.pytorch.org/whl/cpu",
+    "torch==2.2.0+cpu",
+    "torchvision==0.17.0+cpu",
 ]
 
 [project.optional-dependencies]
@@ -36,4 +36,3 @@ dev = [
 
 [project.urls]
 Homepage = "https://github.com/R4Ajeti/yolov9"
-
